@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Education</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #6e7f8e, #a1c4d4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin-top: 50px;
+    }
+
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+
+    .card-header {
+      background-color: #1e3d58;
+      color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .table thead {
+      background-color: #004085;
+      color: white;
+      font-weight: bold;
+    }
+
+    .table-hover tbody tr:hover {
+      background-color: #f1f8ff;
+    }
+
+    .heading {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .table th,
+    .table td {
+      vertical-align: middle;
+    }
+
+    .table td {
+      font-size: 1.1rem;
+    }
+
+    .table .btn {
+      background-color: #1e3d58;
+      color: white;
+      border-radius: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .table .btn:hover {
+      background-color: #004085;
+      cursor: pointer;
+    }
+
+    .table td, .table th {
+      padding: 16px;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .table th, .table td {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-   <table border="1" cellspacing="10">
-    <thead>
-        <tr>
-            <th>Qualification</th>
-            <th>Education Institute</th>
-            <th>Board</th>
-            <th>Percentage/CGPA</th>
-            <th>Year of Passing</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>B.E</td>
-            <td>Siddaganga Institute of Technology</td>
-            <td>VTU, Belgaum</td>
-            <td>8.59cgpa</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>12th</td>
-            <td>Sree Siddaganga PU College</td>
-            <td>State Board</td>
-            <td>89.17%</td>
-            <td>2018</td>
-        </tr>
-        <tr>
-            <td>10th</td>
-            <td>Chaithanya Vidya Mandira</td>
-            <td>State Board</td>
-            <td>94.24%</td>
-            <td>2016</td>
-        </tr>
-    </tbody>
-    <tfoot></tfoot>
-   </table>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="heading">My Education</div>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr>
+                <th>Qualification</th>
+                <th>Institute</th>
+                <th>Board</th>
+                <th>Percentage / CGPA</th>
+                <th>Year of Passing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>B.E</td>
+                <td>Siddaganga Institute of Technology</td>
+                <td>VTU, Belgaum</td>
+                <td>8.59 CGPA</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <td>12th</td>
+                <td>Sree Siddaganga PU College</td>
+                <td>State Board</td>
+                <td>89.17%</td>
+                <td>2018</td>
+              </tr>
+              <tr>
+                <td>10th</td>
+                <td>Chaithanya Vidya Mandira</td>
+                <td>State Board</td>
+                <td>94.24%</td>
+                <td>2016</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
